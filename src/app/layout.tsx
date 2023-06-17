@@ -1,4 +1,5 @@
 import { NavBar } from "./components/NavBar";
+import DashBoardLayout from "./components/layouts/DashboardLayout";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -20,8 +21,7 @@ export default function RootLayout({
         <title>Phat&apos;s Portfolio</title>
       </head>
       <body className={inter.className}>
-        <NavBar />
-        {children}
+        <DashBoardLayout>{children}</DashBoardLayout>
       </body>
     </html>
   );

@@ -4,7 +4,9 @@ import Image from "next/image";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import logoImg from "../logo.png";
 
-type NavBarProps = {};
+type NavBarProps = {
+  handleClickOpenSideBar(): void;
+};
 
 export function NavBar(props: NavBarProps) {
   return (
@@ -25,7 +27,7 @@ export function NavBar(props: NavBarProps) {
         </Link>
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden" onClick={props.handleClickOpenSideBar}>
         <Bars3Icon className="w-8 h-8" />
       </div>
 
@@ -34,6 +36,7 @@ export function NavBar(props: NavBarProps) {
         alt="logo"
         className={classNames({
           "rounded-full w-10 h-10": true,
+          "select-none": true,
         })}
       />
       <button
@@ -41,6 +44,7 @@ export function NavBar(props: NavBarProps) {
           "py-2 px-2 md:px-4 rounded-full": true,
           "bg-gray-200": true,
           "text-black text-xs md:text-sm font-medium": true,
+          "select-none": true,
         })}
       >
         Contact me
