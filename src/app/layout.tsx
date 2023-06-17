@@ -1,6 +1,3 @@
-"use client";
-
-import { useMediaQuery } from "@material-ui/core";
 import { NavBar } from "./components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -17,14 +14,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const isDesktop = useMediaQuery("(min-width:600px)");
   return (
     <html lang="en">
       <head>
         <title>Phat&apos;s Portfolio</title>
       </head>
       <body className={inter.className}>
-        <NavBar isDesktop={isDesktop} />
+        <NavBar />
         {children}
       </body>
     </html>

@@ -4,11 +4,9 @@ import Image from "next/image";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import logoImg from "../logo.png";
 
-type NavBarProps = {
-  isDesktop: boolean;
-};
+type NavBarProps = {};
 
-export function NavBar({ isDesktop }: NavBarProps) {
+export function NavBar(props: NavBarProps) {
   return (
     <nav
       className={classNames({
@@ -18,20 +16,18 @@ export function NavBar({ isDesktop }: NavBarProps) {
         relative: true,
       })}
     >
-      {isDesktop ? (
-        <div className="flex">
-          <Link href="/">
-            <p className="text-slate-600 text-sm">About me</p>
-          </Link>
-          <Link href="/">
-            <p className="text-slate-600 text-sm ml-3">Resume</p>
-          </Link>
-        </div>
-      ) : (
-        <div className="">
-          <Bars3Icon className="w-8 h-8" />
-        </div>
-      )}
+      <div className="hidden md:flex">
+        <Link href="/">
+          <p className="text-slate-600 text-sm">About me</p>
+        </Link>
+        <Link href="/">
+          <p className="text-slate-600 text-sm ml-3">Resume</p>
+        </Link>
+      </div>
+
+      <div className="md:hidden">
+        <Bars3Icon className="w-8 h-8" />
+      </div>
 
       <Image
         src={logoImg}
