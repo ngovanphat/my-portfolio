@@ -9,7 +9,7 @@ type ProjectCardProps = {
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <Link href={props.projectLink} target="_blank">
-      <div className="relative">
+      <div className="relative max-w-max">
         <div className="w-[200px] h-[200px] rounded-[15px] drop-shadow-md bg-slate-50 flex items-center justify-center">
           <Image src={props.projectImage} alt={props.projectName} width={170} />
         </div>

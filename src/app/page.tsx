@@ -4,9 +4,9 @@ import tachnenLogo from "./tachnenlogo.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center px-16 py-4">
-      <div className="flex w-full">
-        <div className="flex flex-col flex-grow w-1/3">
+    <main className="flex min-h-screen flex-col items-center px-4 sm:px-16 py-4">
+      <div className="flex flex-col-reverse sm:flex-row w-full">
+        <div className="flex flex-col flex-grow w-full  sm:w-1/3">
           <p className="text-6xl font-regular text-black">
             My name is <b>Phat</b>
           </p>
@@ -43,7 +43,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col flex-grow w-1/3 justify-center items-center">
+        <div
+          className={classNames({
+            "flex flex-col": true,
+            "mt-[100px] mb-[30px] text-center": true,
+            "sm:mt-0 sm:mb-0 sm:text-left": true,
+            "sm:flex-grow w-full sm:w-1/3 sm:justify-center sm:items-center":
+              true,
+          })}
+        >
           <div
             className={classNames({
               "bg-[#241F21] px-5  py-3": true,
@@ -66,16 +74,21 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col flex-grow w-1/3"></div>
+        <div className="flex flex-col sm:flex-grow w-full  sm:w-1/3"></div>
       </div>
 
       <div className="w-full mt-20">
-        <div className="flex w-full justify-between items center">
+        <div
+          className={classNames({
+            "flex w-full flex-col": true,
+            "sm:flex-row sm:justify-between sm:items-center": true,
+          })}
+        >
           <p className="font-semibold text-black text-3xl">Latest projects</p>
           <p className="text-black text-sm font-medium">All projects</p>
         </div>
 
-        <div className="flex justify-between px-5 py-3">
+        <div className="flex sm:flex-row flex-col items-center sm:justify-between px-5 py-3">
           <div className="mt-5">
             <ProjectCard
               projectImage={tachnenLogo}

@@ -42,7 +42,7 @@ export function NavBar(props: NavBarProps) {
         className={classNames({
           "py-2 px-2 sm:px-4 rounded-full": true,
           "bg-gray-200": true,
-          "text-black text-xs sm:text-sm font-medium": true,
+          "text-black text-xs sm:text-xs font-medium": true,
           "select-none": true,
           "hidden sm:block": true,
         })}
