@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <title>Phat&apos;s Portfolio</title>
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} style={{ backgroundColor: "white" }}>
         <DashBoardLayout>{children}</DashBoardLayout>
       </body>
     </html>

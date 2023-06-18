@@ -12,10 +12,9 @@ export function NavBar(props: NavBarProps) {
   return (
     <nav
       className={classNames({
-        "w-full h-16 py-4 px-2 sm:px-8": true,
-        "text-black bg-white": true,
+        "w-full h-16 p-2 sm:px-16": true,
+        "text-black bg-transparent": true,
         "flex justify-between items-center": true,
-        relative: true,
       })}
     >
       <div className="hidden sm:flex">
@@ -35,7 +34,7 @@ export function NavBar(props: NavBarProps) {
         src={logoImg}
         alt="logo"
         className={classNames({
-          "rounded-full w-12 h-12": true,
+          "rounded-full w-14 h-14": true,
           "select-none": true,
         })}
       />
