@@ -21,7 +21,7 @@ export function NavBar(props: NavBarProps) {
         <Link href="/">
           <p className="text-slate-600 text-sm">About me</p>
         </Link>
-        <Link href="/">
+        <Link href="/resume">
           <p className="text-slate-600 text-sm ml-8 ">Resume</p>
         </Link>
       </div>

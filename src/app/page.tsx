@@ -56,9 +56,9 @@ export default function Home() {
         >
           <div
             className={classNames({
-              "bg-[#241F21] px-8  py-3 max-w-max": true,
+              "bg-[#241F21] px-8  py-3 w-full": true,
               "rounded-[15px]": true,
-              "absolute bottom-[50px] left-[-50px]": true,
+              "sm:absolute sm:bottom-[50px] sm:left-[-50px] sm:max-w-max": true,
             })}
           >
             <p
