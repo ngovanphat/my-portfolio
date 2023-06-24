@@ -1,14 +1,21 @@
+"use client";
 import classNames from "classnames";
 import Link from "next/link";
 import Image from "next/image";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import logoImg from "../logo.png";
+import { useRouter } from "next/navigation";
 
 type NavBarProps = {
   handleClickOpenSideBar(): void;
 };
 
 export function NavBar(props: NavBarProps) {
+  const router = useRouter();
+  function navigateToContact() {
+    router.push("/contact");
+  }
+
   return (
     <nav
       className={classNames({
@@ -46,6 +53,7 @@ export function NavBar(props: NavBarProps) {
           "select-none": true,
           "hidden sm:block": true,
         })}
+        onClick={navigateToContact}
       >
         Contact me
       </button>

@@ -8,7 +8,7 @@ const PDFViewer = dynamic(() => import("../components/pdf-viewer/pdfViewer"), {
 
 export default function PDF() {
   return (
-    <div className="sm:w-full sm:min-h-[100vh]">
+    <div className="sm:w-full sm:min-h-[100vh] bg-gray-100">
       <PDFViewer />
     </div>
   );

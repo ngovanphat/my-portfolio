@@ -1,8 +1,14 @@
+"use client";
 import classNames from "classnames";
 import ProjectCard from "./components/ProjectCard";
 import tachnenLogo from "./tachnenlogo.svg";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  function navigateToContact() {
+    router.push("/contact");
+  }
   return (
     <main className="flex min-h-screen flex-col items-center px-4 sm:px-16 py-4">
       <div className="flex flex-col-reverse sm:flex-row w-full">
@@ -20,6 +26,7 @@ export default function Home() {
               "text-white text-sm": true,
               "mt-5  px-14 py-3 bg-[#E8582A]": true,
             })}
+            onClick={navigateToContact}
           >
             Hire me
           </button>

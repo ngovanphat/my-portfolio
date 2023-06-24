@@ -21,7 +21,7 @@ export default function PDFViewer() {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-3 pt-[30px]">
       <div
         className={classNames({
           "max-w-max": true,
