@@ -10,7 +10,7 @@ export default function Home() {
           <p className="text-6xl font-regular text-black">
             My name is <b>Phat</b>
           </p>
-          <p className="text-slate-400 text-sm mt-5">
+          <p className="text-slate-600 text-sm mt-5">
             I am a fullstack developer with more than 3 years of experience
           </p>
 
@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className="w-full mt-20">
             <div className="flex gap-3">
-              <div className="bg-[#EBEBEB] rounded-md text-black text-lg px-6 py-2">
+              <div className="bg-[#EDEDED] rounded-md text-black text-lg px-6 py-2">
                 javascript
               </div>
               <div className="bg-[#4D9AD5] rounded-md text-black text-lg px-6 py-2">
@@ -43,19 +43,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col sm:flex-grow w-full  sm:w-1/3"></div>
         <div
           className={classNames({
             "flex flex-col": true,
             "mt-[100px] mb-[30px] text-center": true,
             "sm:mt-0 sm:mb-0 sm:text-left": true,
-            "sm:flex-grow w-full sm:w-1/3 sm:justify-center sm:items-center":
-              true,
+            "sm:flex-grow w-full sm:w-1/3 sm:justify-end ": true,
+            relative: true,
           })}
         >
           <div
             className={classNames({
-              "bg-[#241F21] px-5  py-3": true,
+              "bg-[#241F21] px-8  py-3 max-w-max": true,
               "rounded-[15px]": true,
+              "absolute bottom-[50px] left-[-50px]": true,
             })}
           >
             <p
@@ -74,7 +77,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-grow w-full  sm:w-1/3"></div>
       </div>
 
       <div className="w-full mt-20">

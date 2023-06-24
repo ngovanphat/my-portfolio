@@ -1,9 +1,9 @@
 import { NavBar } from "./components/NavBar";
 import DashBoardLayout from "./components/layouts/DashboardLayout";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Noto_Sans_JP({ subsets: ["vietnamese"] });
 
 export const metadata = {
   title: "Phat's portfolio",
@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <title>Phat&apos;s Portfolio</title>
       </head>
-      <body className={inter.className} style={{ backgroundColor: "white" }}>
+      <body className={font.className} style={{ backgroundColor: "white" }}>
         <DashBoardLayout>{children}</DashBoardLayout>
       </body>
     </html>
