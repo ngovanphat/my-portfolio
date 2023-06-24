@@ -12,12 +12,28 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center px-4 sm:px-16 py-4">
       <div className="flex flex-col-reverse sm:flex-row w-full">
-        <div className="flex flex-col flex-grow w-full  sm:w-1/3">
+        <div className="flex flex-col flex-grow w-full  sm:w-1/2">
           <p className="text-6xl font-regular text-black">
             My name is <b>Phat</b>
           </p>
           <p className="text-slate-600 text-sm mt-5">
-            I am a fullstack developer with more than 3 years of experience
+            Allow me to introduce myself. I am a programmer with 3 years of
+            experience, graduating from a prestigious university with a major in
+            Natural Sciences. During my academic years, I excelled in my studies
+            and gained valuable project management skills. <br />
+            <br /> In my professional career, I have primarily focused on
+            front-end and full-stack development. Additionally, I possess skills
+            in mobile development and have knowledge of AI and machine learning.
+            Apart from my professional pursuits, I have a diverse range of
+            interests. I enjoy reading books, playing badminton, and maintaining
+            a healthy lifestyle. Physical fitness is important to me as it helps
+            me maintain focus and productivity in my work.
+            <br />
+            <br />
+            Overall, I am a dedicated and experienced programmer with a passion
+            for expanding my skills and staying updated with the latest industry
+            trends. I am eager to take on new challenges and contribute my
+            expertise to innovative projects.
           </p>
 
           <button
@@ -51,17 +67,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-grow w-full  sm:w-1/3"></div>
+        {/* <div className="flex flex-col sm:flex-grow w-full  sm:w-1/3"></div> */}
         <div
           className={classNames({
             "flex flex-col": true,
             "mt-[100px] mb-[30px] text-center": true,
             "sm:mt-0 sm:mb-0 sm:text-left": true,
-            "sm:flex-grow w-full sm:w-1/3 sm:justify-end ": true,
+            "sm:flex-grow w-full sm:w-1/2 sm:justify-end ": true,
             relative: true,
           })}
         >
-          <div
+          {/* <div
             className={classNames({
               "bg-[#241F21] px-8  py-3 w-full": true,
               "rounded-[15px]": true,
@@ -82,7 +98,7 @@ export default function Home() {
             >
               years experience
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 

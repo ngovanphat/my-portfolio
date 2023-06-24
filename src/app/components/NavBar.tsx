@@ -36,15 +36,16 @@ export function NavBar(props: NavBarProps) {
       <div className="sm:hidden" onClick={props.handleClickOpenSideBar}>
         <Bars3Icon className="w-8 h-8" />
       </div>
-
-      <Image
-        src={logoImg}
-        alt="logo"
-        className={classNames({
-          "rounded-full w-14 h-14": true,
-          "select-none": true,
-        })}
-      />
+      <Link href="/">
+        <Image
+          src={logoImg}
+          alt="logo"
+          className={classNames({
+            "rounded-full w-14 h-14": true,
+            "select-none": true,
+          })}
+        />
+      </Link>
       <button
         className={classNames({
           "py-2 px-2 sm:px-4 rounded-full": true,
